@@ -1,0 +1,173 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("imgs/hero-image.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+/* Description Rules */
+/* Parallax-Like Effect */
+.description-container {
+    min-height: 50vh;
+    font-size: 2em;
+}
+
+.description {
+    margin: 25vh auto;
+    padding: 1em;
+    text-align: center;
+    width: 75%;
+    min-width: 300px;
+    background-color: rgba(210, 210, 210, 0.8);
+
+}
+
+@media (max-width: 865px) {
+    .description-container {
+        font-size: 1.5em;
+    }
+}
+
+/* Hero Image Rules */
+.hero {
+    /* the 'vh' unit asks the browser to */
+    /* return the height of the viewport */
+    /* we can then use that to set the height of an element */
+    /* as a percentage of the viewport height (vh) */
+    height: 100vh;
+    min-height: 740px;
+    background-image: url("imgs/hero1.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .8);
+}
+
+.hero .title {
+    font-size: 22pt;
+    color: #fff;
+    float: right;
+    margin-top: 170px;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 2em;
+    text-align: center;
+    background-color: rgba(120, 120, 120, 0.7);
+}
+
+.title h1 {
+    font-family: 'Princess Sofia', cursive;
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+}
+
+.title h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 0.5em;
+}
+
+.hero .nav {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 2em;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero .nav a {
+    flex-grow: 1;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero .nav-item {
+    font-size: 0.5em;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-width: 1px 0;
+}
+
+.hero .nav-item:hover {
+    color: #fff;
+    background-color: rgba(207, 200, 222, 0.5);
+}
+
+
+@media (max-width: 865px) {
+    .hero {
+        min-height: 730px;
+    }
+    .hero .title {
+        font-size: 18pt;
+    }
+}
+
+@media (max-width: 585px) {
+    .hero {
+        min-height: 500px;
+    }
+    .hero .title {
+        font-size: 14pt;
+        margin: 0;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 445px) {
+    .hero .title {
+        font-size: 12pt;
+    }
+}
+
+/* Menu Rules */
+.menu {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 2em;
+    background-color: rgb(61, 61, 61);
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, .8);
+}
+
+.menu h1 {
+    font-family: 'Princess Sofia', cursive;
+}
+
+.menu .menu-group-container {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+.menu .menu-group {
+    padding: 1em;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.menu .menu-head {
+    font-style: italic;
+    font-size: 2em;
+    padding: 1em;
+}
+
+.menu .menu-item {
+    text-align: left;
+    font-style: normal;
+}

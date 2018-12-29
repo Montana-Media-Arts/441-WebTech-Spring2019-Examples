@@ -1,0 +1,21 @@
+{
+  "name": "ski-dictionary",
+  "version": "1.0.0",
+  "description": "A collection of skier terms and definitions",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ski",
+    "terms",
+    "dictionary"
+  ],
+  "author": "Alex Banks",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.3"
+  }
+}

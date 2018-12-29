@@ -1,0 +1,22 @@
+{
+  "name": "sio-server",
+  "version": "1.0.0",
+  "description": "A sample socket io server",
+  "main": "sio-server.js",
+  "scripts": {
+    "start": "open http://localhost:3000 & node sio-server.js"
+  },
+  "keywords": [
+    "Socket",
+    "IO",
+    "Simple",
+    "Sample"
+  ],
+  "author": "Alex Banks <alex@moonhighway.com> (http://www.moonhighway.com)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.3.7",
+    "socket.io-client": "^1.3.7"
+  }
+}

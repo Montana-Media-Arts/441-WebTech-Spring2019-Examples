@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>events</title>
+
+    <style media="screen">
+
+		p {
+			padding: 20px;
+			margin: auto;
+			max-width: 80px;
+		}
+        #click {
+            color: rgb(200, 255, 207);
+            background-color: rgb(34, 25, 10);
+        }
+        #click:hover {
+            color: rgb(34, 25, 10);
+            background-color: rgb(200, 255, 207);
+        }
+        #click:active {
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 255, 207);
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- events can be attached to any element -->
+    <p id="click">Click me</p>
+    <p id="noClick">No handler here.</p>
+
+	<script>
+
+    var rand255 = function() {
+        var num;
+        num = Math.random();
+        num = Math.floor(num * 256);
+        console.log(num);
+        return num;
+    }
+
+    var button = document.getElementById("click");
+    button.addEventListener("click", function() {
+
+        // For a list of style properties in JS see
+        // http://www.w3schools.com/jsref/dom_obj_style.asp
+
+        document.getElementById("noClick").style.backgroundColor = "rgb(" +
+        // document.getElementById("noClick").style.color = "rgb(" +
+            rand255() + "," + rand255() + "," + rand255() + ")";
+        console.log("Button clicked.");
+    });
+
+
+    </script>
+
+
+</body>
+</html>

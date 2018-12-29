@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form Data</title>
+    </head>
+    <body>
+
+        <form class="form1" action="#" method="post">
+
+            <input type="text" name="Text Input" value="write here" onclick="clearText()" id="textIn1">
+
+            <button type="button" name="button" onclick="grabText()" id="runButton">Run the JS</button>
+
+        </form>
+
+        <div class="storageDiv" id="storageDiv">
+
+        </div>
+
+        <script type="text/javascript">
+            addEventListener("keydown", function(event){
+                // check if it was the "return" key
+                if (event.keyCode == 13) {
+                    document.getElementById("runButton").click();
+                }
+            });
+
+            function clearText(){
+                var textIn;
+                document.getElementById("textIn1").value = "";
+            }
+
+            function grabText(){
+                var textIn;
+                textIn = document.getElementById("textIn1").value;
+                console.log(textIn);
+
+                var textToAdd = document.createTextNode(textIn);
+
+                var storage = document.getElementById("storageDiv");
+
+                var newP = document.createElement("P");
+
+                newP.appendChild(textToAdd);
+
+                storage.parentNode.appendChild(newP);
+
+            }
+
+        </script>
+
+
+    </body>
+</html>

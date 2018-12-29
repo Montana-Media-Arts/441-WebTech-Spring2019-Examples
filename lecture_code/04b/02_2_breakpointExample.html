@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>min AND max-width Media Queries</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="../../default-styles.css"> -->
+    <style type="text/css">
+      h1 {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        font-size: 6em;
+        font-family: Roboto;
+        transition: all 0.5s;
+      }
+      .yes {
+        color: green;
+        opacity: 0;
+      }
+      .no {
+        color: red;
+      }
+
+      @media screen and (min-width: 500px) and (max-width: 600px) {
+        .yes {
+          opacity: 1;
+        }
+        .no {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="yes">YES</h1>
+      <h1 class="no">NO</h1>
+      <p>@media screen and (min-width: 500px)  and (max-width: 600px) {...</p>
+    </div>
+  </body>
+</html>

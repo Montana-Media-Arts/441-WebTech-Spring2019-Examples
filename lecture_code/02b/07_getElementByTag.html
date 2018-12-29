@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>node.getElementByTag()</title>
+    </head>
+    <body>
+
+        <!-- Test Buttons -->
+        <button type="button" name="button" onclick="numberOfP()">How Many Paragraph Elements are there?</button>
+        <button type="button" name="button" onclick="numberOfA()">How Many Link Elements are there?</button>
+        <button type="button" name="button" onclick="replaceAllLinks()">Replace Links HREF Attribute</button>
+        <button type="button" name="button" onclick="replaceItAll()">Replace Links with Text</button>
+
+        <!-- Some content -->
+        <div class="list1">
+            <ul>
+                <li><p><a href="http://michaelmusick.com">michaelmusick.com</a></p></li>
+                <li><p><a href="https://facebook.com">facebook.com</a></p></li>
+                <li><p><a href="https://www.huffingtonpost.com">huffington post</a></p></li>
+                <li><p><a href="https://github.com">GitHub</a></p></li>
+            </ul>
+        </div>
+
+        <!-- An element to put some info in. -->
+        <p id="jsDebug1"></p>
+        <p id="jsDebug2"></p>
+
+        <!-- JavaScript -->
+        <script type="text/javascript">
+
+            function numberOfP(){
+                var nodeListP, pToWrite;
+                // Select all elements of tag 'p'
+                nodeListP = document.getElementsByTagName('p');
+                // Select a specific p element
+                pToWrite = document.getElementById('jsDebug1');
+                pToWrite.innerHTML = "There are " + nodeListP.length + " paragraph elements.";
+            }
+            function numberOfA(){
+                var nodeListA, pToWrite;
+                // Select all elements of tag 'p'
+                nodeListA = document.getElementsByTagName('a');
+                // Select a specific p element
+                pToWrite = document.getElementById('jsDebug2');
+                pToWrite.innerHTML = "There are " + nodeListA.length + " link elements.";
+            }
+
+        </script>
+
+        <!-- JavaScript -->
+        <script type="text/javascript">
+
+            // Select all elements of tag 'p'
+            var nodeList;
+            nodeList = document.getElementsByTagName('p');
+
+            // List their properties, in this case their ID
+            console.log(
+                Object.getOwnPropertyNames(nodeList)
+            );
+
+            // A function to replace their contents
+            function replaceItAll(){
+                for (var i = 0; i < nodeList.length; i++) {
+                    nodeList[i].innerHTML = "hahaha: " + i;
+                }
+            }
+
+        </script>
+
+        <!-- JavaScript -->
+        <script type="text/javascript">
+
+            var nodeListA;
+            nodeListA = document.getElementsByTagName('a');
+
+            // A function to replace the link href attribute
+            function replaceAllLinks(){
+                for (var i = 0; i < nodeListA.length; i++) {
+                    nodeListA[i].href = "http://michaelmusick.com";
+                }
+            }
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "K-Eco 180",
+    "sku": "KE180",
+    "cost": "$162.00",
+    "retail": "$315.00",
+    "avail": "In stock"
+  },
+  {
+    "name": "K-Eco 200",
+    "sku": "KE200",
+    "cost": "$180.00",
+    "retail": "$350.00",
+    "avail": "In stock"
+  },
+  {
+    "name": "K-Eco 225",
+    "sku": "KE225",
+    "cost": "$198.00",
+    "retail": "$385.00",
+    "avail": "On back order"
+  },
+  {
+    "name": "K-Eco 250",
+    "sku": "KE250",
+    "cost": "$225.00",
+    "retail": "$437.50",
+    "avail": "In stock"
+  }
+]

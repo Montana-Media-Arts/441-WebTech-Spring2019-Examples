@@ -1,0 +1,3 @@
+# HW 2 Weekly Write Up
+
+This week we were introduced to JavaScript through a rather simple "Hello World!" example. I found this...

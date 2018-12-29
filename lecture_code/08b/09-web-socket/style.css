@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    color: #0F0;
+    font-family: verdana;
+}
+
+body input,
+body label {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+input {
+    outline: none;
+    border: none;
+    background-color: black;
+    color: #0F0;
+    padding: 1em .5em;
+    display: block;
+    font-size: 1.5em;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+label {
+    display: block;
+    padding: 1em .5em;
+    font-size: 1.5em;
+}
+
+div.messages {
+    margin-left: 1em;
+}
+
+form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}

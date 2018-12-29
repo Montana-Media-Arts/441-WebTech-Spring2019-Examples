@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+}
+
+body, h1 {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    font-family: cursive;
+    color: navy;
+}
+
+figcaption {
+    font-size: 1.5em;
+    font-family: fantasy;
+    color: #001125;
+}
+
