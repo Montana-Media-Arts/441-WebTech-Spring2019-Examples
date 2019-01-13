@@ -24,9 +24,9 @@ This course focuses on media integration, interactivity, client-side development
 
 ## Designer and Instructor Info
 
-- Professor Michael Musick
-- E-Mail: [michael.musick@umontana.edu](mailto:michael.musick@umontana.edu?subject=440%20question).
-- Office: McGill Hall, 232.
+- Professor Michael Cassens
+- E-Mail: [michael.cassens@umontana.edu](mailto:michael.cassens@umontana.edu?subject=440%20question).
+- Office: McGill Hall, 230.
 
 <!--
 
