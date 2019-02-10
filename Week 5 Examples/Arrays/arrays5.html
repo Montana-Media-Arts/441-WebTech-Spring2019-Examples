@@ -1,0 +1,23 @@
+<html>
+
+    <head>
+        <title>Arrays</title>
+
+        <script>
+            function printArray()
+            {
+                var friends = "George,Grace,Ella,John,Meghan,Ben";
+                var separateFriends = friends.split(",");
+                var allFriends = "";
+                for(var i = 0; i < separateFriends.length; i++)
+                {
+                    allFriends += separateFriends[i] + "<br>";
+                }
+                document.getElementById("myFriends").innerHTML = allFriends;
+            }        
+        </script>
+    </head>
+    <body onload="printArray();">
+        <div id="myFriends"></div>
+    </body>
+</html>

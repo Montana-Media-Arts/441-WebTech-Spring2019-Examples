@@ -1,0 +1,22 @@
+<html>
+
+    <head>
+        <title>Arrays</title>
+
+        <script>
+            function printArray()
+            {
+                var ages = new Array(3, 5, "0", 9);
+                var sumOfAges = 0;
+                for(var i = 0; i < ages.length; i++)
+                {
+                    sumOfAges += ages[i];
+                }
+                document.getElementById("myAges").innerHTML = sumOfAges;
+            }        
+        </script>
+    </head>
+    <body onload="printArray();">
+        <div id="myAges"></div>
+    </body>
+</html>

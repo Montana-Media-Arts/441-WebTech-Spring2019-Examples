@@ -1,0 +1,22 @@
+<html>
+
+    <head>
+        <title>Arrays</title>
+
+        <script>
+            function printArray(number)
+            {
+                var food = new Array("apple", "orange", "grape");
+                var allFoods = "";
+                for(var i = 0; i < number; i++)
+                {
+                    allFoods += food[i] + "<br>";
+                }
+                document.getElementById("myFoods").innerHTML = allFoods;
+            }        
+        </script>
+    </head>
+    <body onload="printArray('three');">
+        <div id="myFoods"></div>
+    </body>
+</html>

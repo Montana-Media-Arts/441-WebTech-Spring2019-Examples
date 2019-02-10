@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>
+            Query String
+        </title>
+        <script>
+            function sendToNextPage()
+            {
+                var information = document.getElementById("information").value;
+                window.location="querystring2.html?info=" + information;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="information">
+        <button id="btnSubmit" onclick="sendToNextPage();">Submit</button>
+    </body>
+</html>
