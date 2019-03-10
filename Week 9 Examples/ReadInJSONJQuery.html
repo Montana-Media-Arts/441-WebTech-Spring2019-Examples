@@ -5,12 +5,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            $("button").click(function () {
-                var test = load("emojis.json");
-                var emoji = JSON.parse(test);
-                $("bikeInformation").text(emoji.100);
-                //$("#bikeInformation").load("bikeInfo.txt", fadeText);
-            });
+            $("button").click(function(){
+                $.getJSON("emojis.json", function(result){
+                    $.each(result, function(i, field){
+                    $("div").append("<img src=" + field + ">");
+                    });
+                });
+                });
         });
 
         function fadeText()
